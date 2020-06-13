@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "a184ab4a-11b1-4139-ba5d-6d62e32bf5e0",
+		"name": "sustentabilidade",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "item",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3333/items",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"items"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Point",
+			"item": [
+				{
+					"name": "Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Mercado XPTO9\",\n\t\"email\":\"contato9@xpto.com.br\",\n\t\"whatsapp\":\"62998745632\",\n\t\"latitude\":\"123456789\",\n\t\"longitude\":\"987654321\",\n\t\"city\": \"Palmas\",\n\t\"uf\": \"TO\",\n\t\"items\":[1,2]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3333/points",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3333/points",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3333/points/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"points",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
